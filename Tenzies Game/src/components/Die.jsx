@@ -4,7 +4,7 @@ const Die = ({ diceValue }) => {
   return (
     <>
       <div className={`${styles.die}`}>
-        <h3>{diceValue}</h3>
+        <h2>{diceValue}</h2>
       </div>
     </>
   );
