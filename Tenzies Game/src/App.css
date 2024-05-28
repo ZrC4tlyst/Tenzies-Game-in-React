@@ -21,7 +21,7 @@ body {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -32,13 +32,22 @@ body {
   cursor: pointer;
 }
 
-button{
-    padding: 10px 20px;
-    border: none;
-    margin: 25px;
-    font-size: 1.2rem;
-    background-color: #5035ff;
-    color: white;
-    border-radius: 5px;
-    font-family: sans-serif;
+button {
+  padding: 10px 20px;
+  border: none;
+  margin: 25px;
+  font-size: 1.2rem;
+  background-color: #5035ff;
+  color: white;
+  border-radius: 5px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
 }
