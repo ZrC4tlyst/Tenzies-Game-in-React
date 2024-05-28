@@ -14,6 +14,10 @@ function App() {
     return newDice;
   }
 
+  function rollDice() {
+    setNewDie(allNewDice());
+  }
+
   const newDieFace = newDie.map((die) => (
     <Die key={Math.random()} diceValue={die} />
   ));
@@ -22,6 +26,7 @@ function App() {
     <>
       <main className="main">
         <div className="die-container">{newDieFace}</div>
+        <button onClick={rollDice}>Roll dice</button>
       </main>
     </>
   );
