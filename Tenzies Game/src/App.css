@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+html,
+body {
+  font-family: sans-serif;
+  height: 100%;
+  width: 100%;
+  background: #0a2433;
+  padding: 40px;
+}
+
+.main {
+  height: 70vh;
+  width: 100%;
+  max-width: 1000px;
+  background: #f6e9df;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.main h1 {
+  padding-top: 10px;
+}
