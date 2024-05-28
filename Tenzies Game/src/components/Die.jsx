@@ -1,5 +1,6 @@
 import styles from "../cssModules/Die.module.css";
 
+// eslint-disable-next-line react/prop-types
 const Die = ({ diceValue }) => {
   return (
     <>
