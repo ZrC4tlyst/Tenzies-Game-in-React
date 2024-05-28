@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
+
 }
 
 html,
@@ -11,22 +11,23 @@ body {
   height: 100%;
   width: 100%;
   background: #0a2433;
-  padding: 40px;
+  padding: 20px;
 }
 
 .main {
-  height: 70vh;
-  width: 100%;
-  max-width: 1000px;
+  height: 60vh;
+  max-width: 800px;
   background: #f6e9df;
   border-radius: 10px;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
 }
 
-.main h1 {
-  padding-top: 10px;
+.die-container {
+  display: grid;
+  grid-template: auto auto/repeat(5, 1fr);
+  gap: 30px;
+  cursor: pointer;
 }
