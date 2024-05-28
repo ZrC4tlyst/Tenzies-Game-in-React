@@ -9,7 +9,10 @@ function App() {
     const newDice = [];
     for (let i = 1; i < 11; i++) {
       let randomNumber = Math.ceil(Math.random() * 6);
-      newDice.push(randomNumber);
+      newDice.push({
+        value: randomNumber,
+        isHeld: false,
+      });
     }
     return newDice;
   }
@@ -19,7 +22,7 @@ function App() {
   }
 
   const newDieFace = newDie.map((die) => (
-    <Die key={Math.random()} diceValue={die} />
+    <Die key={Math.random()} diceValue={die.value} />
   ));
 
   return (
